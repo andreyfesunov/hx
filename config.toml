@@ -16,13 +16,13 @@ end-of-line-diagnostics = "hint"
 [editor.statusline]
 left = [
   "mode",
-  "version-control",
+  "spinner",
   "file-modification-indicator",
   "read-only-indicator",
 ]
 center = ["file-name"]
 right = [
-  "spinner",
+  "version-control",
   "diagnostics",
   "workspace-diagnostics",
   "position",
@@ -44,3 +44,46 @@ snippets = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 60000 # ms
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.smart-tab]
+enable = true
+supersede-menu = true
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 30
+max-indent-retain = 8
+wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "info"
+other-lines = "hint"
+max-wrap = 30
