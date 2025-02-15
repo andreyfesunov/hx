@@ -1,7 +1,44 @@
 theme = "amberwood"
 
 [editor]
+scrolloff = 8
 line-number = "relative"
+cursorline = true
+auto-completion = true
+auto-format = false
+preview-completion-insert = true
+bufferline = "always"
+color-modes = true
+insert-final-newline = true
+auto-pairs = true
+end-of-line-diagnostics = "hint"
+
+[editor.statusline]
+left = [
+  "mode",
+  "version-control",
+  "file-modification-indicator",
+  "read-only-indicator",
+]
+center = ["file-name"]
+right = [
+  "spinner",
+  "diagnostics",
+  "workspace-diagnostics",
+  "position",
+  "register",
+  "selections",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+
+[editor.lsp]
+enable = true
+display-progress-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+snippets = true
 
 [editor.cursor-shape]
 insert = "bar"
