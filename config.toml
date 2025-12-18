@@ -77,12 +77,6 @@ skip-levels = 1
 enable = true
 supersede-menu = true
 
-[editor.soft-wrap]
-enable = true
-max-wrap = 30
-max-indent-retain = 8
-wrap-at-text-width = true
-
 [editor.inline-diagnostics]
 cursor-line = "info"
 other-lines = "hint"
@@ -98,6 +92,8 @@ C-k = [
 ]
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
+0 = "goto_line_start"
+"$" = "goto_line_end"
 
 [keys.insert]
 S-tab = "move_parent_node_start"
